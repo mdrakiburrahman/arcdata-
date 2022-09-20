@@ -109,7 +109,7 @@ multipass exec arc-k3s -- kubectl delete -k $remote/overlays/k3s
 
 ### Reduced image size will lead to more deployment resiliency
 
-Our images each take up about **2.5 GB**, which adds up across the control plane. Depending on the ingress speed, pulling the images might be tough for smaller clusters. E.g. my underlying Ubuntu host got a handful of `imagePull` failures because of download throttling from ISP:
+Our images each take up about **2.5 GB _each_**, which adds up across the control plane. Depending on the ingress speed, pulling the images might be tough for smaller clusters. E.g. my underlying Ubuntu host got a handful of `imagePull` failures because of download throttling from ISP:
     
 ```text
 Events:
