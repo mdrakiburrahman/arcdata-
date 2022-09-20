@@ -199,7 +199,7 @@ We maintain patches for other components as well. When possible, we contribute t
     
 - Drop legacy 3rd party Storage Drivers that used to bloat up Kubernetes
         
-  Basically, say you’re PortWorx, you’d have to write code and merge into Kubernets Upstream. These volume plugins bloat up Kubernetes source code a lot because conformance testing all these providers is painful.
+  Basically, say you’re PortWorx, you’d have to write code and merge into Kubernetes Upstream. These volume plugins bloat up Kubernetes source code a lot because conformance testing all these providers is painful.
         
   [community/volume-plugin-faq.md at master · kubernetes/community](https://github.com/kubernetes/community/blob/master/sig-storage/volume-plugin-faq.md)
         
