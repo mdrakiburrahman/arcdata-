@@ -1,0 +1,24 @@
+{
+    "patch": [
+        {
+            "op": "add",
+            "path": "spec.docker",
+            "value": {
+                "registry": "mcr.microsoft.com",
+                "repository": "arcdata",
+                "imageTag": "v1.11.0_2022-09-13",
+                "imagePullPolicy": "IfNotPresent"
+            }
+        },        
+        {
+            "op": "add",
+            "path": "spec.storage.data.className",
+            "value": "local-path"
+        },  
+        {
+            "op": "add",
+            "path": "spec.storage.logs.className",
+            "value": "local-path"
+        }               
+    ]
+}
